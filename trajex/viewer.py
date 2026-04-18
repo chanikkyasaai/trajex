@@ -4,7 +4,6 @@ import json
 import logging
 import os
 import tempfile
-import webbrowser
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:

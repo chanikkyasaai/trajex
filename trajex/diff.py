@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Literal
 
 if TYPE_CHECKING:
-    from trajex.trace import Trace, Step
+    from trajex.trace import Trace
 
 logger = logging.getLogger("trajex")
 
@@ -291,8 +291,8 @@ def _diff_step_count(result: TraceDiff, before: "Trace", after: "Trace") -> None
                 check="step_count_increased",
                 title=f"Total step count grew: {bs} -> {as_} (+{as_ - bs})",
                 detail=(
-                    f"More steps means more token spend and higher latency per invocation.\n"
-                    f"Investigate which new steps were added and whether they are necessary."
+                    "More steps means more token spend and higher latency per invocation.\n"
+                    "Investigate which new steps were added and whether they are necessary."
                 ),
                 before=bs,
                 after=as_,

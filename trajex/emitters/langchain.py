@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 from collections import deque
 from datetime import datetime, timezone
-from typing import Any, Optional, Union
+from typing import Any
 
 logger = logging.getLogger("trajex")
 
@@ -34,7 +34,7 @@ if _AVAILABLE:
 
         def __init__(self, prompt: str = "") -> None:
             super().__init__()
-            from trajex.trace import Step, StepType
+            from trajex.trace import Step
             self._prompt = prompt
             self._steps: list[Step] = []
             self._counter: int = 0

@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from trajex.result import TrajectoryReport
-    from trajex.scanner import ScanReport, ScanFinding
+    from trajex.scanner import ScanReport
     from trajex.trace import Trace
 
 _RESET = "\033[0m"

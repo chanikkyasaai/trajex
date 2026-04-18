@@ -37,7 +37,7 @@ class SequenceAssertion(TrajectoryAssertion):
             return AssertionResult(
                 passed=False,
                 name=self.name,
-                message=f"Expected sequence not found in trace",
+                message="Expected sequence not found in trace",
                 detail=(
                     f"Expected sequence: {' -> '.join(self.tools)}\n"
                     f"Actual tools:      {actual}\n"
