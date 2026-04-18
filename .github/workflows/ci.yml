@@ -26,5 +26,5 @@ jobs:
         run: pytest tests/ -v --tb=short
       - name: CLI smoke test
         run: |
-          trajex scan tests/fixtures/traces/auth_bypass.json || true
-          trajex info tests/fixtures/traces/clean_delete.json
+          trajex scan tests/fixtures/synthetic_traces/auth_bypass.json || true
+          trajex info tests/fixtures/synthetic_traces/clean_delete.json
