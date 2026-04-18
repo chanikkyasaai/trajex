@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trajex"
+version = "0.3.0"
+description = "The open format for AI agent execution traces — assert what your agent DID, not just what it said"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = [
+    "ai", "agents", "testing", "llm", "trajectory", "langchain",
+    "openai", "tracing", "evals", "observability"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+langchain  = ["langchain-core>=0.2.0"]
+openai     = ["openai>=1.30.0"]
+crewai     = ["crewai>=0.28.0"]
+pydantic-ai = ["pydantic-ai>=0.0.9"]
+semantic   = ["openai>=1.30.0"]
+all        = [
+    "langchain-core>=0.2.0",
+    "openai>=1.30.0",
+    "crewai>=0.28.0",
+    "pydantic-ai>=0.0.9",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4.0",
+]
+
+[project.urls]
+Homepage      = "https://github.com/yourusername/trajex"
+Documentation = "https://github.com/yourusername/trajex#readme"
+Repository    = "https://github.com/yourusername/trajex"
+Issues        = "https://github.com/yourusername/trajex/issues"
+Changelog     = "https://github.com/yourusername/trajex/releases"
+
+[project.scripts]
+trajex = "trajex.cli:main"
+
+[project.entry-points."pytest11"]
+trajex = "trajex.pytest_plugin"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["trajex*"]
+exclude = ["tests*", "examples*", "spec*"]
+
+[tool.pytest.ini_options]
+testpaths    = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length    = 100
+target-version = "py310"

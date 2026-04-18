@@ -1,0 +1,56 @@
+{
+  "trajex_version": "1",
+  "id": "9f3537bc-7a2c-4b92-b0e0-4cd3bd1bc0b8",
+  "prompt": "What are the latest advances in quantum computing?",
+  "final_output": "Based on the research, I can provide you with insights into the latest advances in quantum computing:\n\n1. Processor Scaling\n- IBM has made a breakthrough by developing a 1000-qubit quantum processor in 2023, which represents a significant leap in quantum computational capacity.\n\n2. Error Correction\n- Quantum error correction has seen substantial advancements, which is crucial for making quantum computers more stable and reliable. This addresses one of the most significant challenges in quantum computing.\n\n3. Quantum Networking\n- Researchers are making progress in quantum networking, with experiments demonstrating entanglement across urban environments. This could potentially revolutionize data transmission and cryptography.\n\n4. Quantum Supremacy\n- Google has continued to push boundaries with its Sycamore processor, demonstrating quantum supremacy by performing calculations that would be impossible for classical computers.\n\nThese advances suggest that quantum computing is rapidly moving from theoretical research to practical applications, with improvements in processor capacity, error correction, and potential real-world implementations.\n\nWould you like me to elaborate on any of these specific advances in quantum computing?",
+  "status": "success",
+  "started_at": "2026-04-18T06:19:41.608005+00:00",
+  "ended_at": "2026-04-18T06:19:59.669757+00:00",
+  "metadata": {
+    "framework": "unknown"
+  },
+  "steps": [
+    {
+      "index": 0,
+      "step_type": "tool_call",
+      "name": "search_web",
+      "input": "Latest advances in quantum computing 2023 breakthrough technologies",
+      "output": "ARTICLE 1: IBM announced a 1000-qubit quantum processor in 2023. Quantum error correction has advanced significantly. ARTICLE 2: Google achieved quantum supremacy with Sycamore. ARTICLE 3: Quantum networking using entanglement is being tested across cities.",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:19:46.423188+00:00",
+      "ended_at": "2026-04-18T06:19:46.423188+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 1,
+      "step_type": "tool_call",
+      "name": "search_web",
+      "input": "Quantum computing recent breakthroughs in error correction and practical applications",
+      "output": "ARTICLE 1: IBM announced a 1000-qubit quantum processor in 2023. Quantum error correction has advanced significantly. ARTICLE 2: Google achieved quantum supremacy with Sycamore. ARTICLE 3: Quantum networking using entanglement is being tested across cities.",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:19:48.373339+00:00",
+      "ended_at": "2026-04-18T06:19:48.373339+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 2,
+      "step_type": "tool_call",
+      "name": "write_report",
+      "input": [
+        "Latest advances in quantum computing",
+        "IBM announced a 1000-qubit quantum processor in 2023. Quantum error correction has advanced significantly. Google achieved quantum supremacy with Sycamore. Quantum networking using entanglement is being tested across cities."
+      ],
+      "output": "{'report': \"Research Report: Latest Advances in Quantum Computing\\n\\nIn 2023, quantum computing reached a significant milestone with IBM's introduction of a 1000-qubit processor, demonstrating substantial progress in computational capacity and complexity. Quantum error correction techniques have advanced dramatically, addressing one of the primary challenges in quantum computing by improving the stability and reliability of quantum systems. Emerging research in quantum networking, including successful entanglement experiments across urban environments, suggests that practical quantum communication networks are becoming increasingly feasible, potentially revolutionizing data transmission and cryptography.\", 'context_chars': 224}",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:19:50.976305+00:00",
+      "ended_at": "2026-04-18T06:19:54.131511+00:00",
+      "duration_ms": 3155.206,
+      "metadata": {}
+    }
+  ]
+}

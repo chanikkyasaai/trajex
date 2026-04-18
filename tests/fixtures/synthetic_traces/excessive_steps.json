@@ -1,0 +1,43 @@
+{
+  "trajex_version": "1",
+  "id": "58731baa-d5c1-50f9-a40b-1869407e34f5",
+  "prompt": "Summarize the latest news about AI",
+  "final_output": "Here is a summary of the latest AI news.",
+  "status": "success",
+  "started_at": "2026-04-17T10:00:00+00:00",
+  "ended_at": "2026-04-17T10:00:25+00:00",
+  "metadata": {
+    "framework": "langchain",
+    "model": "gpt-4o",
+    "agent_name": "news_agent",
+    "tags": [],
+    "custom": {}
+  },
+  "steps": [
+    {"index": 0, "step_type": "llm_call", "name": "gpt-4o", "input": "Summarize the latest news about AI", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:00+00:00", "ended_at": "2026-04-17T10:00:01+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 1, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Let me search for news.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:01+00:00", "ended_at": "2026-04-17T10:00:02+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 2, "step_type": "tool_call", "name": "search_news", "input": "AI news", "output": "Article 1...", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:02+00:00", "ended_at": "2026-04-17T10:00:03+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 3, "step_type": "llm_call", "name": "gpt-4o", "input": "Article 1...", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:03+00:00", "ended_at": "2026-04-17T10:00:04+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 4, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Let me search more.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:04+00:00", "ended_at": "2026-04-17T10:00:05+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 5, "step_type": "llm_call", "name": "gpt-4o", "input": "More context", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:05+00:00", "ended_at": "2026-04-17T10:00:06+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 6, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Still need more info.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:06+00:00", "ended_at": "2026-04-17T10:00:07+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 7, "step_type": "llm_call", "name": "gpt-4o", "input": "Continuing", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:07+00:00", "ended_at": "2026-04-17T10:00:08+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 8, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Keep going.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:08+00:00", "ended_at": "2026-04-17T10:00:09+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 9, "step_type": "llm_call", "name": "gpt-4o", "input": "Analysis", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:09+00:00", "ended_at": "2026-04-17T10:00:10+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 10, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Processing.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:10+00:00", "ended_at": "2026-04-17T10:00:11+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 11, "step_type": "llm_call", "name": "gpt-4o", "input": "More analysis", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:11+00:00", "ended_at": "2026-04-17T10:00:12+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 12, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Still working.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:12+00:00", "ended_at": "2026-04-17T10:00:13+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 13, "step_type": "llm_call", "name": "gpt-4o", "input": "Review", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:13+00:00", "ended_at": "2026-04-17T10:00:14+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 14, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Reviewing.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:14+00:00", "ended_at": "2026-04-17T10:00:15+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 15, "step_type": "llm_call", "name": "gpt-4o", "input": "Synthesize", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:15+00:00", "ended_at": "2026-04-17T10:00:16+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 16, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Synthesizing.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:16+00:00", "ended_at": "2026-04-17T10:00:17+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 17, "step_type": "llm_call", "name": "gpt-4o", "input": "Final check", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:17+00:00", "ended_at": "2026-04-17T10:00:18+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 18, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Almost done.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:18+00:00", "ended_at": "2026-04-17T10:00:19+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 19, "step_type": "llm_call", "name": "gpt-4o", "input": "Output", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:19+00:00", "ended_at": "2026-04-17T10:00:20+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 20, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Done.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:20+00:00", "ended_at": "2026-04-17T10:00:21+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 21, "step_type": "llm_call", "name": "gpt-4o", "input": "Double check", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:21+00:00", "ended_at": "2026-04-17T10:00:22+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 22, "step_type": "llm_response", "name": "gpt-4o", "input": null, "output": "Checking.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:22+00:00", "ended_at": "2026-04-17T10:00:23+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 23, "step_type": "llm_call", "name": "gpt-4o", "input": "Finalize", "output": null, "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:23+00:00", "ended_at": "2026-04-17T10:00:24+00:00", "duration_ms": 1000.0, "metadata": {}},
+    {"index": 24, "step_type": "agent_finish", "name": "agent_finish", "input": null, "output": "Here is a summary of the latest AI news.", "error": null, "reasoning": null, "started_at": "2026-04-17T10:00:24+00:00", "ended_at": "2026-04-17T10:00:25+00:00", "duration_ms": 1000.0, "metadata": {}}
+  ]
+}

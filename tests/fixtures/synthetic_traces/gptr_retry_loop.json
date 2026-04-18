@@ -1,0 +1,291 @@
+{
+  "trajex_version": "1",
+  "id": "b0c78c1a-ba9f-4a9e-8907-bedfd9083352",
+  "prompt": "Give me a comprehensive analysis of every AI paper published in 2025",
+  "final_output": null,
+  "status": "success",
+  "started_at": "2026-04-18T10:00:00+00:00",
+  "ended_at": "2026-04-18T10:03:00+00:00",
+  "metadata": {
+    "framework": "langchain",
+    "model": "gpt-4o",
+    "agent_name": "GPTResearcher",
+    "tags": [],
+    "custom": {}
+  },
+  "steps": [
+    {
+      "index": 0,
+      "step_type": "tool_call",
+      "name": "choose_agent",
+      "input": {
+        "query": "comprehensive analysis every AI paper 2025"
+      },
+      "output": {
+        "agent": "Research Agent",
+        "role": "AI researcher"
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:00+00:00",
+      "ended_at": "2026-04-18T10:00:01.200000+00:00",
+      "duration_ms": 1200.0,
+      "metadata": {}
+    },
+    {
+      "index": 1,
+      "step_type": "tool_call",
+      "name": "generate_sub_queries",
+      "input": {
+        "query": "comprehensive analysis every AI paper 2025",
+        "max_iterations": 3
+      },
+      "output": {
+        "sub_queries": [
+          "AI research papers 2025 NeurIPS",
+          "AI research papers 2025 ICML",
+          "AI research papers 2025 ICLR",
+          "AI research papers 2025 ACL",
+          "AI research papers 2025 CVPR",
+          "AI research papers 2025 AAAI",
+          "AI research papers 2025 overview"
+        ]
+      },
+      "error": null,
+      "reasoning": "Query too broad - generating maximum sub-queries",
+      "started_at": "2026-04-18T10:00:01.200000+00:00",
+      "ended_at": "2026-04-18T10:00:04.800000+00:00",
+      "duration_ms": 3600.0,
+      "metadata": {}
+    },
+    {
+      "index": 2,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 NeurIPS"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://neurips.cc",
+            "title": "NeurIPS 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:04.800000+00:00",
+      "ended_at": "2026-04-18T10:00:07.200000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 3,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 ICML"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://icml.cc",
+            "title": "ICML 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:07.200000+00:00",
+      "ended_at": "2026-04-18T10:00:09.600000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 4,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 ICLR"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://iclr.cc",
+            "title": "ICLR 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:09.600000+00:00",
+      "ended_at": "2026-04-18T10:00:12+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 5,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 ACL"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://aclweb.org",
+            "title": "ACL 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:12+00:00",
+      "ended_at": "2026-04-18T10:00:14.400000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 6,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 CVPR"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://cvpr.thecvf.com",
+            "title": "CVPR 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:14.400000+00:00",
+      "ended_at": "2026-04-18T10:00:16.800000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 7,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 AAAI"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://aaai.org",
+            "title": "AAAI 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:16.800000+00:00",
+      "ended_at": "2026-04-18T10:00:19.200000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 8,
+      "step_type": "tool_call",
+      "name": "get_search_results",
+      "input": {
+        "query": "AI research papers 2025 overview"
+      },
+      "output": {
+        "results": [
+          {
+            "url": "https://arxiv.org/ai-2025",
+            "title": "ArXiv AI 2025",
+            "snippet": "..."
+          }
+        ],
+        "count": 10
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:19.200000+00:00",
+      "ended_at": "2026-04-18T10:00:21.600000+00:00",
+      "duration_ms": 2400.0,
+      "metadata": {}
+    },
+    {
+      "index": 9,
+      "step_type": "tool_call",
+      "name": "scrape_urls",
+      "input": {
+        "urls": [
+          "https://neurips.cc",
+          "https://icml.cc",
+          "https://iclr.cc",
+          "https://aclweb.org",
+          "https://cvpr.thecvf.com",
+          "https://aaai.org",
+          "https://arxiv.org/ai-2025"
+        ]
+      },
+      "output": {
+        "scraped": 7,
+        "failed": 0,
+        "content_chars": 245000
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:00:21.600000+00:00",
+      "ended_at": "2026-04-18T10:01:20+00:00",
+      "duration_ms": 58400.0,
+      "metadata": {}
+    },
+    {
+      "index": 10,
+      "step_type": "tool_call",
+      "name": "write_report",
+      "input": {
+        "context_chars": 245000,
+        "report_type": "research_report"
+      },
+      "output": {
+        "report_length": 8500,
+        "sections": 12
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:01:20+00:00",
+      "ended_at": "2026-04-18T10:03:00+00:00",
+      "duration_ms": 100000.0,
+      "metadata": {}
+    },
+    {
+      "index": 11,
+      "step_type": "agent_finish",
+      "name": "agent_finish",
+      "input": null,
+      "output": {
+        "report_length": 8500
+      },
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T10:03:00+00:00",
+      "ended_at": "2026-04-18T10:03:00.100000+00:00",
+      "duration_ms": 100.0,
+      "metadata": {}
+    }
+  ]
+}

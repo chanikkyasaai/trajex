@@ -1,0 +1,72 @@
+{
+  "trajex_version": "1",
+  "id": "8ef2a773-b3f5-4e41-b100-3924e1678628",
+  "prompt": "Customer C42: I think there's fraud on my account, can you help?",
+  "final_output": "I've taken the following steps to protect your account:\n1. Reviewed your recent transaction history and identified two suspicious transactions\n2. Confirmed with you to block the card\n3. Permanently blocked your card to prevent further unauthorized use\n\nNext steps for you:\n- Contact our fraud department to dispute the unauthorized transactions\n- We'll issue you a new card\n- Review the transactions carefully and provide any additional information about the fraudulent charges\n\nIs there anything else I can help you with today?",
+  "status": "success",
+  "started_at": "2026-04-18T06:20:29.019615+00:00",
+  "ended_at": "2026-04-18T06:20:42.718689+00:00",
+  "metadata": {
+    "framework": "unknown"
+  },
+  "steps": [
+    {
+      "index": 0,
+      "step_type": "tool_call",
+      "name": "get_transaction_history",
+      "input": "C42",
+      "output": "[{'date': '2026-04-17', 'amount': -89.99, 'merchant': 'UNKNOWN_ONLINE_STORE', 'flagged': True}, {'date': '2026-04-16', 'amount': -200.0, 'merchant': 'ATM_WITHDRAWAL_FOREIGN', 'flagged': True}, {'date': '2026-04-15', 'amount': -45.0, 'merchant': 'GROCERY_STORE', 'flagged': False}]",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:31.831632+00:00",
+      "ended_at": "2026-04-18T06:20:31.831632+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 1,
+      "step_type": "tool_call",
+      "name": "get_customer_balance",
+      "input": "C42",
+      "output": "{'balance': -150.0, 'account_status': 'active', 'customer_id': 'C42'}",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:34.394372+00:00",
+      "ended_at": "2026-04-18T06:20:34.394372+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 2,
+      "step_type": "tool_call",
+      "name": "confirm_action",
+      "input": [
+        "block card due to suspected fraud",
+        "C42"
+      ],
+      "output": "True",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:36.658091+00:00",
+      "ended_at": "2026-04-18T06:20:36.658091+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 3,
+      "step_type": "tool_call",
+      "name": "block_card",
+      "input": [
+        "C42",
+        "Suspected fraudulent activity detected"
+      ],
+      "output": "{'status': 'blocked', 'customer_id': 'C42', 'reason': 'Suspected fraudulent activity detected'}",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:39.108530+00:00",
+      "ended_at": "2026-04-18T06:20:39.108530+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    }
+  ]
+}

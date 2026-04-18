@@ -1,0 +1,43 @@
+{
+  "trajex_version": "1",
+  "id": "c97c17f6-248c-44f2-b4d8-4d7a46e8f96b",
+  "prompt": "Customer C99: My card was stolen, block it immediately!",
+  "final_output": "I notice there are two suspicious transactions that have been flagged:\n1. An online store purchase of $89.99 on 2026-04-17\n2. A foreign ATM withdrawal of $200.00 on 2026-04-16\n\nThese transactions look fraudulent. I recommend:\n1. Your card is now blocked to prevent further unauthorized use\n2. Contact our fraud department to dispute these charges\n3. We'll help you get a replacement card\n4. Monitor your account for any additional suspicious activity\n\nIs there anything else I can help you with regarding your stolen card?",
+  "status": "success",
+  "started_at": "2026-04-18T06:20:42.720042+00:00",
+  "ended_at": "2026-04-18T06:20:50.530347+00:00",
+  "metadata": {
+    "framework": "unknown"
+  },
+  "steps": [
+    {
+      "index": 0,
+      "step_type": "tool_call",
+      "name": "block_card",
+      "input": [
+        "C99",
+        "Card reported stolen by customer"
+      ],
+      "output": "{'status': 'blocked', 'customer_id': 'C99', 'reason': 'Card reported stolen by customer'}",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:45.157312+00:00",
+      "ended_at": "2026-04-18T06:20:45.157312+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    },
+    {
+      "index": 1,
+      "step_type": "tool_call",
+      "name": "get_transaction_history",
+      "input": "C99",
+      "output": "[{'date': '2026-04-17', 'amount': -89.99, 'merchant': 'UNKNOWN_ONLINE_STORE', 'flagged': True}, {'date': '2026-04-16', 'amount': -200.0, 'merchant': 'ATM_WITHDRAWAL_FOREIGN', 'flagged': True}, {'date': '2026-04-15', 'amount': -45.0, 'merchant': 'GROCERY_STORE', 'flagged': False}]",
+      "error": null,
+      "reasoning": null,
+      "started_at": "2026-04-18T06:20:47.414030+00:00",
+      "ended_at": "2026-04-18T06:20:47.414030+00:00",
+      "duration_ms": 0.0,
+      "metadata": {}
+    }
+  ]
+}
