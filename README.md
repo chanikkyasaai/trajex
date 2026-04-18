@@ -24,6 +24,12 @@ Trajex defines a canonical Trace format — the **OpenTelemetry of agent traject
 
 ---
 
+
+
+## Here Are Findings
+
+See [`FINDINGS.md`](FINDINGS.md) for the field-study findings.
+
 ## Demo
 
 ```
