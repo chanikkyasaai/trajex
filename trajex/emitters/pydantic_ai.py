@@ -6,7 +6,7 @@ from typing import Any
 logger = logging.getLogger("trajex")
 
 try:
-    import pydantic_ai as _pydantic_ai
+    import pydantic_ai  # noqa: F401
     _AVAILABLE = True
 except ImportError:
     _AVAILABLE = False

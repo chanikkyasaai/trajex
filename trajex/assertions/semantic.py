@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 logger = logging.getLogger("trajex")
 
 try:
-    import openai as _openai
+    import openai  # noqa: F401
     _OPENAI_AVAILABLE = True
 except ImportError:
     _OPENAI_AVAILABLE = False

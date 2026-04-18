@@ -6,7 +6,7 @@ from typing import Any
 logger = logging.getLogger("trajex")
 
 try:
-    import crewai as _crewai
+    import crewai  # noqa: F401
     _AVAILABLE = True
 except ImportError:
     _AVAILABLE = False

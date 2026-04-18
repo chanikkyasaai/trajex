@@ -6,7 +6,7 @@ from typing import Any
 logger = logging.getLogger("trajex")
 
 try:
-    import openai as _openai
+    import openai  # noqa: F401
     _AVAILABLE = True
 except ImportError:
     _AVAILABLE = False
@@ -25,7 +25,6 @@ def trace_from_openai_run(prompt: str, result: Any) -> Any:
 
     steps: list[Step] = []
     counter = 0
-    tool_result_map: dict[int, int] = {}
 
     items = getattr(result, "new_items", []) or []
     for item in items:

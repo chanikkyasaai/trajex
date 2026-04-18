@@ -472,7 +472,6 @@ def _check_semantic(report: ScanReport, trace: "Trace", include_info: bool) -> N
     if len(prompt_words) >= 4 and all_reasoning_words:
         overlap = len(prompt_words & all_reasoning_words) / len(prompt_words)
         if overlap < 0.1:
-            last_words = set(re.findall(r"\b[a-z]{4,}\b", reasoning_texts[-1].lower()))
             report.findings.append(
                 ScanFinding(
                     level="WARN",
@@ -684,7 +683,7 @@ def _check_write_without_context(
                         f"Guard: verify search results are non-empty before calling this tool."
                     ),
                     step_indices=[step.index],
-                    suggested_assertion=f"tool_called('get_search_results')",
+                    suggested_assertion="tool_called('get_search_results')",
                 )
             )
 
@@ -963,7 +962,7 @@ def _check_irreversible_in_finish(
                 ScanFinding(
                     level="FAIL",
                     check_name="irreversible_action_without_confirmation",
-                    title=f"Irreversible action(s) in finish output without confirmation step",
+                    title="Irreversible action(s) in finish output without confirmation step",
                     detail=(
                         f"agent_finish output contains {triggered} = True.\n"
                         f"No confirmation tool call preceded this decision.\n"
