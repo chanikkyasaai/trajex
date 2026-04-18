@@ -1,15 +1,12 @@
 from __future__ import annotations
 
+import importlib.util
 import logging
 from typing import Any
 
 logger = logging.getLogger("trajex")
 
-try:
-    import openai  # noqa: F401
-    _AVAILABLE = True
-except ImportError:
-    _AVAILABLE = False
+_AVAILABLE = importlib.util.find_spec("openai") is not None
 
 
 def _require() -> None:

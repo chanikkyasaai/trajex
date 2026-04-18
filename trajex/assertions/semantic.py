@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import importlib.util
 import json
 import logging
 from typing import TYPE_CHECKING
@@ -11,11 +12,7 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger("trajex")
 
-try:
-    import openai  # noqa: F401
-    _OPENAI_AVAILABLE = True
-except ImportError:
-    _OPENAI_AVAILABLE = False
+_OPENAI_AVAILABLE = importlib.util.find_spec("openai") is not None
 
 
 def _require_openai() -> None:

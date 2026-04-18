@@ -1,15 +1,12 @@
 from __future__ import annotations
 
+import importlib.util
 import logging
 from typing import Any
 
 logger = logging.getLogger("trajex")
 
-try:
-    import pydantic_ai  # noqa: F401
-    _AVAILABLE = True
-except ImportError:
-    _AVAILABLE = False
+_AVAILABLE = importlib.util.find_spec("pydantic_ai") is not None
 
 
 def _require() -> None:
